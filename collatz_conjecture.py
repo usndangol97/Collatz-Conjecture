@@ -7,11 +7,15 @@ count = 0
 while(number != 1):
     temp_num = number%2
     if(temp_num == 0):
+        test_num = number
         number= number/2
         count=count+1
+        print("{} / 2 = {}".format(test_num,number))
     else:
+        test_num = number
         number = (number *3)+1
         count+=1
+        print("({}* 3 )+1 = {}".format(test_num, number))
 
-print(count)
+print("Number of steps taken : {}".format(count))
 
